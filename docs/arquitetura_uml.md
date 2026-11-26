@@ -4,11 +4,9 @@
 **Instituição:** Universidade Federal Rural de Pernambuco (UFRPE) — Bacharelado em Sistemas de Informação (BSI)  
 **Avaliação:** 2ª VA  
 **Equipe:**  
-* [Nome Completo do Integrante 1] — Matrícula: `[000000]`  
-* [Nome Completo do Integrante 2] — Matrícula: `[000000]`  
-* [Nome Completo do Integrante 3] — Matrícula: `[000000]`  
-
-**Repositório / Entrega de Código:** `[Inserir link do GitHub ou indicar envio via arquivo .zip]`
+Jose Carlos Cavalcanti  
+Orquídea
+Raphael Almeida da Silva
 
 ---
 
@@ -33,7 +31,7 @@ O projeto consiste em um sistema de *backoffice* operado via terminal (CLI) para
 
 Representa as funcionalidades expostas no menu principal ao operador (`Vendedor`), destacando as inclusões obrigatórias (`«include»`) de verificação de catálogo e registro de pagamento ao alugar um veículo, bem como as extensões condicionais (`«extend»`) para filtragem de veículos disponíveis e cálculo de multa em devoluções com atraso.
 
-![Diagrama de Casos de Uso](E:/Raphael/Study/Development/Projects/AI_Based/Workspace/BSI_APSI_SegundaVA/projeto_python_UFRPE/docs/images/diagrama_casos_de_uso.png)
+![Diagrama de Casos de Uso](diagramas/imagens/casos-de-uso.png)
 
 ---
 
@@ -41,7 +39,7 @@ Representa as funcionalidades expostas no menu principal ao operador (`Vendedor`
 
 Estrutura estática do sistema com tipagem de atributos, assinaturas de métodos, modificadores de visibilidade oficiais da UML (`+`, `-`, `#`), relações de herança, associações com multiplicidades e composição entre `Locacao` e `Pagamento`.
 
-![Diagrama de Classes](E:/Raphael/Study/Development/Projects/AI_Based/Workspace/BSI_APSI_SegundaVA/projeto_python_UFRPE/docs/images/diagrama_classes.png)
+![Diagrama de Classes](diagramas/imagens/classes.png)
 
 ---
 
@@ -49,7 +47,7 @@ Estrutura estática do sistema com tipagem de atributos, assinaturas de métodos
 
 Demonstra a troca cronológica de mensagens entre o ator `Vendedor`, o controlador `:Sistema` (`main.py`) e as instâncias de `Veiculo`, `Locacao` e `Pagamento`, contemplando o bloco condicional (`alt`) para validação prévia de disponibilidade do veículo antes da instanciação do contrato.
 
-![Diagrama de Sequência](E:/Raphael/Study/Development/Projects/AI_Based/Workspace/BSI_APSI_SegundaVA/projeto_python_UFRPE/docs/images/diagrama_sequencia.png)
+![Diagrama de Sequência](diagramas/imagens/sequencia-locacao-sucesso.png)
 
 ---
 
@@ -57,4 +55,4 @@ Demonstra a troca cronológica de mensagens entre o ator `Vendedor`, o controlad
 
 Mapeia o fluxo de trabalho entre as raias `Vendedor` e `Sistema` durante a devolução de um veículo, detalhando os nós de decisão para localização do contrato ativo, apuração condicional de atraso com cálculo de multa e liberação final do automóvel no pátio.
 
-![Diagrama de Atividades](E:/Raphael/Study/Development/Projects/AI_Based/Workspace/BSI_APSI_SegundaVA/projeto_python_UFRPE/docs/images/diagrama_atividades.png)
+![Diagrama de Atividades](diagramas/imagens/atividades-devolucao.png)
