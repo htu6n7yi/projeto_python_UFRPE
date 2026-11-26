@@ -83,3 +83,4 @@ Essa é a organização planejada; os módulos listados ainda não foram impleme
 Consulte as [instruções em Markdown](docs/instrucoes-projeto/instrucoes.md) ou baixe a [versão PDF](docs/instrucoes-projeto/instrucoes.pdf) para ver os requisitos, entregas e critérios de avaliação da 2ª VA e da 3ª VA.
 
 Para visualizar ou exportar os diagramas, consulte as [instruções dos diagramas](docs/diagramas/README.md).
+📄 Consulte a [Documentação de Arquitetura e Modelagem UML](./docs/arquitetura_uml.md).
