@@ -31,7 +31,7 @@ O projeto consiste em um sistema de *backoffice* operado via terminal (CLI) para
 
 Representa as funcionalidades expostas no menu principal ao operador (`Vendedor`), destacando as inclusões obrigatórias (`«include»`) de verificação de catálogo e registro de pagamento ao alugar um veículo, bem como as extensões condicionais (`«extend»`) para filtragem de veículos disponíveis e cálculo de multa em devoluções com atraso.
 
-![Diagrama de Casos de Uso](diagramas/imagens/casos-de-uso.png)
+![Diagrama de Casos de Uso](images/01%20-%20Diagrama%20de%20Casos%20de%20Uso.drawio.png)
 
 ---
 
@@ -39,7 +39,7 @@ Representa as funcionalidades expostas no menu principal ao operador (`Vendedor`
 
 Estrutura estática do sistema com tipagem de atributos, assinaturas de métodos, modificadores de visibilidade oficiais da UML (`+`, `-`, `#`), relações de herança, associações com multiplicidades e composição entre `Locacao` e `Pagamento`.
 
-![Diagrama de Classes](diagramas/imagens/classes.png)
+![Diagrama de Classes](images/02%20-%20Diagrama%20de%20Classes.drawio.png)
 
 ---
 
@@ -47,7 +47,7 @@ Estrutura estática do sistema com tipagem de atributos, assinaturas de métodos
 
 Demonstra a troca cronológica de mensagens entre o ator `Vendedor`, o controlador `:Sistema` (`main.py`) e as instâncias de `Veiculo`, `Locacao` e `Pagamento`, contemplando o bloco condicional (`alt`) para validação prévia de disponibilidade do veículo antes da instanciação do contrato.
 
-![Diagrama de Sequência](diagramas/imagens/sequencia-locacao-sucesso.png)
+![Diagrama de Sequência](images/03%20-%20Diagrama%20de%20Sequencia.drawio.png)
 
 ---
 
@@ -55,4 +55,4 @@ Demonstra a troca cronológica de mensagens entre o ator `Vendedor`, o controlad
 
 Mapeia o fluxo de trabalho entre as raias `Vendedor` e `Sistema` durante a devolução de um veículo, detalhando os nós de decisão para localização do contrato ativo, apuração condicional de atraso com cálculo de multa e liberação final do automóvel no pátio.
 
-![Diagrama de Atividades](diagramas/imagens/atividades-devolucao.png)
+![Diagrama de Atividades](images/04%20-%20Diagrama%20de%20Atividades.drawio.png)
