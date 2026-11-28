@@ -1,6 +1,6 @@
-# Locadora de Veículos — Projeto Prático de POO e UML
+# Locadora de Veículos
 
-Projeto prático da disciplina para modelar uma locadora de veículos em Python, aplicando Programação Orientada a Objetos e UML.
+Sistema de locação de veículos em Python, desenvolvido com Programação Orientada a Objetos e modelado em UML.
 
 ## Clonar o repositório
 
@@ -8,8 +8,6 @@ Projeto prático da disciplina para modelar uma locadora de veículos em Python,
 git clone git@github.com:htu6n7yi/projeto_python_UFRPE.git
 cd projeto_python_UFRPE
 ```
-
-Se o repositório for privado, sua conta precisa ter acesso. Para SSH, configure sua chave no GitHub antes de clonar.
 
 ## Escopo
 
@@ -25,17 +23,11 @@ Regras de negócio implementadas:
 
 ## Como executar
 
-Requer Python 3.9 ou superior, sem dependências externas. A partir da raiz do projeto:
+Requer Python 3.9+.
 
 ```bash
 python -m src.main
 ```
-
-## Estado atual
-
-- Classes de domínio e menu CLI implementados, atendendo aos requisitos da 2ª VA.
-- Os quatro diagramas UML (Casos de Uso, Classes, Sequência e Atividades) estão em `images/`.
-- Itens exclusivos da 3ª VA (classe abstrata com `abc`, exceção personalizada e persistência em arquivo) não foram implementados.
 
 ## Estrutura
 
@@ -66,22 +58,30 @@ python -m src.main
 - `images/`: diagramas UML exportados do draw.io.
 - `docs/instrucoes-projeto/`: instruções originais da atividade.
 
-## Aplicação dos pilares de POO
+## POO
 
-- **Herança:** `Vendedor` e `Cliente` herdam de `Pessoa` e usam `super()`.
-- **Encapsulamento:** atributos protegidos (`_`) em `Pessoa` e privados (`__`) nas demais classes, acessados por métodos `get_`/`set_`.
-- **Polimorfismo:** `exibir_dados()` é sobrescrito em `Vendedor` e `Cliente`.
-- **Associação e composição:** `Locacao` associa `Cliente`, `Vendedor` e `Veiculo`, e cria internamente o seu `Pagamento` (composição).
+- Herança: `Vendedor` e `Cliente` herdam de `Pessoa`.
+- Encapsulamento: atributos protegidos e privados com getters e setters.
+- Polimorfismo: `exibir_dados()` sobrescrito nas subclasses.
+- Composição: `Locacao` cria e mantém o seu `Pagamento`.
 
 ## Diagramas UML
 
+### Diagrama de Casos de Uso
+
 ![Diagrama de Casos de Uso](images/01%20-%20Diagrama%20de%20Casos%20de%20Uso.drawio.png)
+
+### Diagrama de Classes
 
 ![Diagrama de Classes](images/02%20-%20Diagrama%20de%20Classes.drawio.png)
 
-![Diagrama de Sequência — Realizar Locação](images/03%20-%20Diagrama%20de%20Sequencia.drawio.png)
+### Diagrama de Sequência
 
-![Diagrama de Atividades — Registrar Devolução](images/04%20-%20Diagrama%20de%20Atividades.drawio.png)
+![Diagrama de Sequência](images/03%20-%20Diagrama%20de%20Sequencia.drawio.png)
+
+### Diagrama de Atividades
+
+![Diagrama de Atividades](images/04%20-%20Diagrama%20de%20Atividades.drawio.png)
 
 ## Requisitos da atividade
 
